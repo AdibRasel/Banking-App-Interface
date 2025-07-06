@@ -54,6 +54,9 @@ class MyApp extends StatelessWidget {
         GetPage(name: "/SendMonay", page: ()=> SendMonay(), transition: Transition.rightToLeft),
         GetPage(name: "/TransactionList", page: ()=> TransactionList(), transition: Transition.rightToLeft),
         GetPage(name: "/YourAccount", page: ()=> YourAccount(), transition: Transition.rightToLeft),
+      
+        GetPage(name: "/SplashScreen", page: ()=> SplashScreen(), transition: Transition.rightToLeft),
+      
       ],
 
 

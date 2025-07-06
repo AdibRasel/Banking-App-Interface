@@ -1,6 +1,7 @@
 import 'package:banking_app_interface/Components/CustomButton.dart';
 import 'package:banking_app_interface/Components/InputField.dart';
 import 'package:flutter/material.dart';
+import 'package:get/get.dart';
 
 class Login extends StatelessWidget {
   const Login({super.key});
@@ -48,7 +49,7 @@ class Login extends StatelessWidget {
                         width: 200,
                       ),
                     ],
-                    
+
                   ),
                 ),
 
@@ -130,7 +131,7 @@ class Login extends StatelessWidget {
                           ),
                           InkWell(
                             onTap: () {
-                              // Sign Up Action
+                              Get.toNamed("/Registration");
                             },
                             child: const Text(
                               "Sign Up",
