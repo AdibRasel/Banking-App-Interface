@@ -150,7 +150,7 @@ class _RegistrationState extends State<Registration> {
                                 text: "SIGN UP",
                                 backgroundColor: const Color(0xFF1A3D73),
                                 onPressed: () {
-
+                                  Get.toNamed("/Home");
                                 },
                               ),
 

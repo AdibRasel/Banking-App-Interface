@@ -83,7 +83,7 @@ class Login extends StatelessWidget {
                   text: "LOG IN",
                   backgroundColor: const Color(0xFF1A3D73),
                   onPressed: () {
-                   
+                   Get.toNamed("/Home");
                   },
                 ),
 
