@@ -89,6 +89,14 @@ class CustomDrawer extends StatelessWidget {
             ),
 
             ListTile(
+              leading: const Icon(Icons.settings, color: Colors.white),
+              title: const Text("Settings", style: TextStyle(color: Colors.white)),
+              onTap: () {
+                Get.toNamed("/Settings");
+              },
+            ),
+
+            ListTile(
               leading: const Icon(Icons.app_registration, color: Colors.white),
               title: const Text("Registration", style: TextStyle(color: Colors.white)),
               onTap: () {

@@ -6,6 +6,7 @@ import 'package:banking_app_interface/Screen/Payment.dart';
 import 'package:banking_app_interface/Screen/QRTransaction.dart';
 import 'package:banking_app_interface/Screen/Registration.dart';
 import 'package:banking_app_interface/Screen/SendMonay.dart';
+import 'package:banking_app_interface/Screen/Settings.dart';
 import 'package:banking_app_interface/Screen/TransactionList.dart';
 import 'package:banking_app_interface/Screen/YourAccount.dart';
 import 'package:banking_app_interface/SplashScreen.dart';
@@ -26,6 +27,12 @@ class MyApp extends StatelessWidget {
       debugShowCheckedModeBanner: false,
       theme: ThemeData(
         primaryColor: Color(0xFF1A3D73),
+          bottomNavigationBarTheme: BottomNavigationBarThemeData(
+          selectedItemColor: Color(0xFF1A3D73),
+          unselectedItemColor: Colors.grey,
+          backgroundColor: Colors.white,
+          selectedLabelStyle: TextStyle(fontWeight: FontWeight.bold),
+        ),
 
         appBarTheme: AppBarTheme(
           backgroundColor: Color(0xFF1A3D73),
@@ -54,6 +61,7 @@ class MyApp extends StatelessWidget {
         GetPage(name: "/SendMonay", page: ()=> SendMonay(), transition: Transition.rightToLeft),
         GetPage(name: "/TransactionList", page: ()=> TransactionList(), transition: Transition.rightToLeft),
         GetPage(name: "/YourAccount", page: ()=> YourAccount(), transition: Transition.rightToLeft),
+        GetPage(name: "/Settings", page: ()=> Settings(), transition: Transition.rightToLeft),
       
         GetPage(name: "/SplashScreen", page: ()=> SplashScreen(), transition: Transition.rightToLeft),
       
