@@ -1,6 +1,6 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android">
     <application
-        android:label="banking_app_interface"
+        android:label="Banking Interface"
         android:name="${applicationName}"
         android:icon="@mipmap/ic_launcher">
         <activity

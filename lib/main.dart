@@ -8,6 +8,7 @@ import 'package:banking_app_interface/Screen/Registration.dart';
 import 'package:banking_app_interface/Screen/SendMonay.dart';
 import 'package:banking_app_interface/Screen/Settings.dart';
 import 'package:banking_app_interface/Screen/TransactionList.dart';
+import 'package:banking_app_interface/Screen/Transfer.dart';
 import 'package:banking_app_interface/Screen/YourAccount.dart';
 import 'package:banking_app_interface/SplashScreen.dart';
 import 'package:flutter/material.dart';
@@ -62,6 +63,7 @@ class MyApp extends StatelessWidget {
         GetPage(name: "/TransactionList", page: ()=> TransactionList(), transition: Transition.rightToLeft),
         GetPage(name: "/YourAccount", page: ()=> YourAccount(), transition: Transition.rightToLeft),
         GetPage(name: "/Settings", page: ()=> Settings(), transition: Transition.rightToLeft),
+        GetPage(name: "/Transfer", page: ()=> Transfer(), transition: Transition.rightToLeft),
       
         GetPage(name: "/SplashScreen", page: ()=> SplashScreen(), transition: Transition.rightToLeft),
       

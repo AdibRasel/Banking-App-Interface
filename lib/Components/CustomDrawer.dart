@@ -40,6 +40,15 @@ class CustomDrawer extends StatelessWidget {
               },
             ),
 
+
+            ListTile(
+              leading: const Icon(Icons.send, color: Colors.white),
+              title: const Text("Transfer", style: TextStyle(color: Colors.white)),
+              onTap: () {
+                Get.toNamed("/Transfer");
+              },
+            ),
+
             ListTile(
               leading: const Icon(Icons.list, color: Colors.white),
               title: const Text("Transaction List", style: TextStyle(color: Colors.white)),
